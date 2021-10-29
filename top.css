@@ -1,0 +1,222 @@
+/*---- TOP ----*/ 
+
+.top{
+    padding: 30px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    position: fixed;
+    top: 0px;
+    background-color: white;
+    width: 90.5%;
+    z-index: 10000;
+}
+
+.top h1{
+    font-weight: lighter;
+    color: rgb(58, 58, 58);
+}
+
+.top .menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.menu .left,
+.menu .right{
+    margin: 0px 15px 0px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.btn{
+    cursor: pointer;
+    border: none;
+    font-size: 17px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.menu .right .pannier{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu .right .pannier .btn{
+    font-size: 20px;
+    padding: 10px ;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+/*---- DROPDOWN PLUS ----*/ 
+
+.dropdown{
+    display: none;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 150px;
+    background-color: white;
+    right: 8%;
+}
+
+.menu .left .dropdown-plus:nth-child(6):hover .dropdown{
+    display: flex;
+}
+
+/*---- DROPDOWN LOGIN ----*/ 
+
+.menu .right .login button{
+    font-size: 17px;
+    padding: 10px 2px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    cursor: pointer;
+    border: none;
+}
+
+.menu .right .login button i:nth-child(1){
+    font-size: 21px;
+    color: #233f6e;
+}
+
+.dropdown-login-content{
+    padding: 15px;
+    display: none;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 150px;
+    background-color: white;
+    right: 8%;
+}
+
+.menu .right .dropdown-login:hover .dropdown-login-content{
+    display: flex;
+}
+
+/*---- DROPDOWN RESPONSIVE ----*/
+
+.dropdown-responsive button{
+    cursor: pointer;
+    border: none;
+    font-size: 25px;
+    padding: 10px;
+    background-color: transparent;
+    color: black;
+}
+
+.dropdown-responsive{
+    position: relative;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dropdown-responsive .dropdown-responsive-content{
+    position: absolute;
+    top: -30px;
+    right: -85px;
+    width: 55vh;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dropdown-responsive .dropdown-responsive-content .btn-dropdown-responsive{
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.dropdown-responsive:hover .dropdown-responsive-content{
+    display: flex;
+}
+
+/*---- DROPDOWN RESPONSIVE PLUS ----*/
+
+.dropdown-responsive-plus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.dropdown-responsive-plus .dropdown-responsive-content-plus{
+    position: relative;
+    right: 0px;
+    top: 0px;
+    display: none;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+    background-color: transparent;
+    border-left: 2px solid white;
+}
+
+.dropdown-responsive-plus .dropdown-responsive-content-plus .btn-dropdown-responsive-plus{
+    padding: 10px 20px;
+}
+
+.dropdown-responsive-plus:hover .dropdown-responsive-content-plus{
+    display: flex;
+}
+
+/*---- DROPDOWN RESPONSIVE LOGIN ----*/
+
+.dropdown-login-responsive{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.dropdown-login-responsive .dropdown-login-content-responsive{
+    position: relative;
+    right: 0px;
+    top: 0px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+    background-color: transparent;
+    border-left: 2px solid white;
+}
+
+.dropdown-login-responsive .dropdown-login-content-responsive .btn-dropdown-responsive-login{
+    padding: 10px 20px;
+}
+
+.dropdown-login-responsive:hover .dropdown-login-content-responsive{
+    display: flex;
+}
+
+
+/*------ RESPONSIVE ------*/ 
+
+@media screen and (max-width: 1000px){
+
+    .top .menu{
+        display: none;
+    }
+
+    .top .dropdown-responsive{
+        display: flex;
+    }
+}

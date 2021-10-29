@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/*---- ARTICLE ----*/ 
+
+.article{
+    margin-top: 100px;
+    height: auto;
+    background-color: white;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.article .container{
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.article .container .sliders{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.slider{
+    margin: 0px 20px;
+    width: 300px;
+    height: 400px;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.slider .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.slider .content .content-img{
+    background-color: #233e6e81;
+    border-radius: none;
+    transition: ease 300ms;
+    position: relative;
+}
+
+.slider .content .content-img img{
+    object-fit: contain;
+    width: 100%;
+    height: 345px;
+    
+}
+
+.slider .content .content-img .hide-content{
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 75px;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.slider .content .content-img .hide-content a{
+    color: black;
+    font-size: 17px;
+}
+
+.slider .content .content-img:hover .hide-content{
+    animation-duration: 300ms;
+    transition-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-name: slider;
+    animation-fill-mode: forwards;
+}
+
+.slider .content .content-img .hide-content{
+    animation-duration: 300ms;
+    transition-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-name: slider-revers;
+    animation-fill-mode: forwards;
+}
+
+.slider .content .content-img .opacity{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 5;
+    width: 100%;
+    height: 348px;
+    background-color: transparent;
+    transition-duration: 300ms;
+}
+
+.slider .content .content-img:hover .opacity{
+    background-color: rgba(0, 0, 0, 0.247);
+}
+
+.slider .content .info{
+    background-color: white;
+    z-index: 20;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+}
+
+.slider .content .info span{
+    padding: 3px 0px;
+    color: black;
+}
+
+/*---- FOOTER ----*/ 
+
+footer{
+    border-top: 1px rgb(63, 63, 63) solid;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
+
+footer p{
+    color: gray;
+    font-size: 17px;
+}
+
+
+
+
+/*------ ANIMATION ------*/ 
+
+@keyframes slider {
+    from {
+        top: 350px;
+    }
+
+    to {
+        top: 274px;
+    }
+}
+
+@keyframes slider-revers {
+    from {
+        top: 274px;
+    }
+
+    to {
+        top: 350px;
+    }
+}
+
+
+
+/*
+
+Faire grossir l'image au hover 
+.slider .content .content-img
+*/

@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/*---- CONTAIN ----*/
+
+.contain{
+    min-height: 83vh;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.contain .content-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+}
+
+.contain .content-img img{
+    width: 100%;
+}
+
+
+
+/*---- CONTACT ----*/ 
+
+.contact{
+    width: 55%;
+    height: auto;
+    background-color: #ffffff;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.contact .content{
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact .content h1{
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    color: #233f6e;
+    padding: 20px;
+}
+
+.contact .content .formulaire{
+    width: 100%;
+}
+
+.contact .content .formulaire .label{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 100px 10px 20px;
+}
+
+.contact .content .formulaire .label span{
+    font-size: 15px;
+    color: rgb(95, 95, 95);
+}
+
+.contact .content .formulaire .label input{
+    width: 100%;
+    height: 20px;
+    padding: 10px;
+    color: black;
+    font-size: 15px;
+    margin: 5px 0px;
+    transition-duration: 200ms;
+}
+
+.contact .content .formulaire .label input:hover,
+.contact .content .formulaire .label textarea:hover{
+    border: 2px solid black;
+}
+
+.contact .content .formulaire .label input:focus,
+.contact .content .formulaire .label textarea:focus{
+    border: 2px solid black;
+}
+.contact .content .formulaire .label .textarea-div{
+    width: 100%;
+    height: 202px;
+
+}
+
+.contact .content .formulaire .label textarea{
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    color: black;
+    font-size: 15px;
+    margin: 5px 0px;
+    resize : none;
+}
+
+.contact .content .formulaire .bouton{
+    width: 100%;
+    padding: 20px;
+    margin-top: 25px;
+}
+
+.contact .content .formulaire .bouton .btn{
+    background-color: black;
+    color: white;
+    padding: 15px 48%;
+    transition-duration: 300ms;
+}
+
+.contact .content .formulaire .bouton .btn:hover{
+    background-color: rgba(0, 0, 0, 0.808);
+}
+
+/*---- FOOTER ----*/ 
+
+footer{
+    border-top: 1px rgb(63, 63, 63) solid;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
+
+footer p{
+    color: gray;
+    font-size: 17px;
+}

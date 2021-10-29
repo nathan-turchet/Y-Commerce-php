@@ -1,0 +1,15 @@
+footer{
+    border-top: 1px rgb(63, 63, 63) solid;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
+
+footer p{
+    color: gray;
+    font-size: 17px;
+}
