@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Top</title>
     <link rel="stylesheet" href="top.css">
+    <script src="https://kit.fontawesome.com/0c87a70838.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+    crossorigin="anonymous"></script>
 </head>
 <body>
 
 
 <div class="top">
-        <a href="home.html">
+        <a class="a-h1" href="home.php">
             <h1>Y-COMMERCE</h1>
         </a>
         <div class="menu">
@@ -45,7 +49,7 @@
                     </div>
                 </div>
                 <div class="pannier">
-                    <a class="btn" href="">
+                    <a class="btn" href="pannier.php">
                         <i class="fas fa-shopping-bag"></i>
                     </a>
                 </div>
@@ -80,7 +84,7 @@
                         <a class="btn-dropdown-responsive btn-dropdown-responsive-login" href="">Mon Compte</a>
                     </div>
                 </div>
-                <a class="btn-dropdown-responsive" href="">
+                <a class="btn-dropdown-responsive" href="pannier.php">
                     <i class="fas fa-shopping-bag"></i>
                 </a>
             </div>

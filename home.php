@@ -12,19 +12,14 @@
     crossorigin="anonymous"></script>
 </head>
 <body>
-
-<?php
-$contenu = 'Julien';
-setcookie("nom_cookie", $contenu, time()+36000);
-?>
-    
+   
     <?php include('top.php'); ?>
 
     <div class="bienvenue">
         <div class="content">
             <!-- <video id="video" autoplay src="images/logo/animation-bg.mp4"></video> -->
             <h1>DÉCOUVREZ NOS PRODUITS</h1>
-            <a href="">
+            <a href="#article">
                 Découvrir
             </a>
         </div>
@@ -124,7 +119,6 @@ setcookie("nom_cookie", $contenu, time()+36000);
                 <div class="bouton">
                     <input class="btn" type="submit">
                 </div>
-                <p class="echo"></p>
             </form>
         </div>
     </div>

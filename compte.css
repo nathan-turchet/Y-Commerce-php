@@ -11,138 +11,29 @@ body{
     overflow-x: hidden;
 }
 
-/*---- DROPDOWN RESPONSIVE ----*/
+/*---- CONTACT ----*/ 
 
-.dropdown-responsive button{
-    cursor: pointer;
-    border: none;
-    font-size: 25px;
-    padding: 10px;
-    background-color: transparent;
-    color: black;
-}
-
-.dropdown-responsive{
-    position: relative;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.dropdown-responsive .dropdown-responsive-content{
-    position: absolute;
-    top: -30px;
-    right: -85px;
-    width: 55vh;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: none;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.dropdown-responsive .dropdown-responsive-content .btn-dropdown-responsive{
-    color: white;
-    font-size: 20px;
-    padding: 10px;
-}
-
-.dropdown-responsive:hover .dropdown-responsive-content{
-    display: flex;
-}
-
-/*---- DROPDOWN RESPONSIVE PLUS ----*/
-
-.dropdown-responsive-plus{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-}
-
-.dropdown-responsive-plus .dropdown-responsive-content-plus{
-    position: absolute;
-    right: -235px;
-    top: 0px;
-    display: none;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    width: 200px;
-    background-color: transparent;
-    border-left: 2px solid white;
-}
-
-.dropdown-responsive-plus .dropdown-responsive-content-plus .btn-dropdown-responsive-plus{
-    padding: 10px 20px;
-}
-
-.dropdown-responsive-plus:hover .dropdown-responsive-content-plus{
-    display: flex;
-}
-
-/*---- DROPDOWN RESPONSIVE LOGIN ----*/
-
-.dropdown-login-responsive{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-}
-
-.dropdown-login-responsive .dropdown-login-content-responsive{
-    position: absolute;
-    right: -233px;
-    top: 0px;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 200px;
-    background-color: transparent;
-    border-left: 2px solid white;
-}
-
-.dropdown-login-responsive .dropdown-login-content-responsive .btn-dropdown-responsive-login{
-    padding: 10px 20px;
-}
-
-.dropdown-login-responsive:hover .dropdown-login-content-responsive{
-    display: flex;
-}
-
-/*---- COMPTE ----*/ 
-
-.compte{
+.contain{
     margin-top: 100px;
-    min-height: 82vh;
     display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
 }
 
-.compte .connexion{
+.compte{
     width: 50%;
+    height: auto;
+    background-color: #ffffff;
+    position: relative;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    padding: 20px;
 }
 
-.compte .connexion h1{
-    color: #233f6e;
-    font-size: 3em;
-    text-align: center;
-    font-weight: bolder;
-    margin: 0px 0px 20px 0px;
-}
-
-.compte .connexion form{
+.compte .content{
     width: 50%;
     display: flex;
     align-items: flex-start;
@@ -150,85 +41,127 @@ body{
     flex-direction: column;
 }
 
-.compte .connexion form .label{
+.compte .content h1{
+    text-align: center;
+    font-size: 2.5em;
+    color: #233f6e;
+}
+
+.compte .content .formulaire{
+    width: 100%;
+}
+
+.compte .content .formulaire .label{
     width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    padding: 10px 100px 10px 20px;
 }
 
-.compte .connexion form .label .name-label{
-    color: rgb(39, 39, 39);
-    font-size: 17px;
-    margin: 10px 0px 3px 0px;
-}
-
-.compte .connexion form .label input,
-.compte .connexion form .label select{
-    width: 100%;
-    height: 35px;
+.compte .content .formulaire .label span{
     font-size: 15px;
-    color: gray;
+    color: rgb(95, 95, 95);
 }
 
-.compte .connexion form .label input:hover,
-.compte .connexion form .label select:hover{
+.compte .content .formulaire .label input{
+    width: 100%;
+    height: 20px;
+    padding: 10px;
+    color: black;
+    font-size: 15px;
+    margin: 5px 0px;
+    transition-duration: 200ms;
+}
+
+.compte .content .formulaire .label input:hover{
     border: 2px solid black;
 }
 
-.compte .connexion form input[type="submit"]{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 100%;
-    height: 35px;
+.compte .content .formulaire .label input:focus{
+    border: 2px solid black;
 }
 
+.compte .content .formulaire .bouton{
+    width: 100%;
+    padding: 20px;
+}
 
+.compte .content .formulaire .bouton .btn{
+    background-color: black;
+    color: white;
+    padding: 15px 45%;
+    transition-duration: 300ms;
+}
 
-
-
+.compte .content .formulaire .bouton .btn:hover{
+    background-color: rgba(0, 0, 0, 0.808);
+}
 
 /*---- PAYEMENT ----*/
 
-.payement{
+.shopping{
     width: 50%;
     min-height: 82vh;
-    background-color: rgb(0, 0, 0);
-}
-
-/*---- FOOTER ----*/ 
-
-footer{
-    border-top: 1px rgb(63, 63, 63) solid;
-    height: 50px;
+    background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
-    position: relative;
-    z-index: 1;
 }
 
-footer p{
-    color: gray;
-    font-size: 17px;
+.shopping .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid gray;
+    width: 75%;
+    height: 75vh;
 }
 
-
-
-
-/*------ DÉBUT RESPONSIVE ------*/
-
-@media screen and (max-width: 1000px){
-
-    .top .menu{
-        display: none;
-    }
-
-    .top .dropdown-responsive{
-        display: flex;
-    }
+.shopping .content h1{
+    width: 100%;
+    text-align: center;
+    font-size: 2.5em;
+    color: #233f6e;
 }
 
-/*------ FIN RESPONSIVE ------*/ 
+.shopping .content .shopping-content{
+    display: flex;   
+    align-items: flex-start;
+    justify-content: start;
+    flex-direction: column;
+    min-height: 50vh;
+    width: 95%;
+    background-color: rgb(255, 255, 255);
+}
+
+.shopping .content .shopping-content .vide-shopping-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 25px 0px;
+    width: 100%;
+}
+
+.shopping .content .shopping-content .vide-shopping-content span{
+    font-size: 15px;
+    color: rgb(77, 77, 77);
+    text-align: center;
+}
+
+.shopping .content .shopping-content .vide-shopping-content a{
+    padding: 15px 25px;
+    margin: 20px 0px;
+    background-color: black;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    transition: all 300ms ;
+}
+
+.shopping .content .shopping-content .vide-shopping-content a:hover{
+    background-color: rgba(0, 0, 0, 0.781);
+}
