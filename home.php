@@ -5,19 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME | Y-Commerce</title>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="home_php.css">
     <script src="https://kit.fontawesome.com/0c87a70838.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
     crossorigin="anonymous"></script>
 </head>
 <body>
-   
+   <?php include("loader.php") ?>
     <?php include('top.php'); ?>
 
     <div class="bienvenue">
         <div class="content">
-            <!-- <video id="video" autoplay src="images/logo/animation-bg.mp4"></video> -->
             <h1>DÉCOUVREZ NOS PRODUITS</h1>
             <a href="#article">
                 Découvrir
@@ -97,61 +96,57 @@
     <div class="contact">
         <div class="content">
             <h1>CONTACTEZ-NOUS</h1>
-            <form class="formulaire" action="contactez-nous.php">
+            <form class="formulaire">
                 <div class="label">
-                    <span>Nom *</span>
+                    <div class="div-span">
+                        <span>Nom *</span>
+                    </div>
                     <input placeholder="Saisissez votre nom" type="text" name="name" required>
                 </div>
                 <div class="label">
-                    <span>E-mail *</span>
+                    <div class="div-span">
+                        <span>E-mail *</span>
+                    </div>
                     <input placeholder="Saisissez votre e-mail" type="email" name="email" required>
                 </div>
                 <div class="label">
-                    <span>Objet</span>
-                    <input placeholder="Saisissez l'objet" type="text" name="object">
+                    <div class="div-span">
+                        <span>Objet</span>
+                    </div>
+                    <input placeholder="Saisissez l'objet" type="text">
                 </div>
                 <div class="label">
-                    <span>Votre message</span>
-                    <div class="textarea-div">
-                        <textarea placeholder="Rédigez votre message ici..." name="message" id="message" cols="30" rows="10" required></textarea>
+                    <div class="div-span">
+                        <span>Votre message</span>
                     </div>
+                    <textarea placeholder="Rédigez votre message ici..." name="message" id="message" cols="30" rows="10" required></textarea>
                 </div>
-                <div class="bouton">
-                    <input class="btn" type="submit">
+                <div class="label-btn">
+                    <div class="bouton">
+                        <input class="btn" type="submit">
+                    </div>
                 </div>
             </form>
         </div>
     </div>
 
+
     <?php include('footer.php'); ?>
+
 
     <script>
         $(window).scroll(function() {
-            
+
             var scrollPos = $(this).scrollTop() / 25;
-            var st = $(window).scrollTop();
+            var scrollOpacity = $(window).scrollTop();
             var range = 300 
             console.log(scrollPos)
-
 
             $('.bienvenue .content').css({
                 'background-size' : 100 + scrollPos + '%'
             })            
-            $('.bienvenue').css("opacity", 1- st / 5000); 
+            $('.bienvenue').css("opacity", 1- scrollOpacity / 5000); 
         })
     </script> 
-    <!-- <script>
-        var vid = document.getElementById('video');
-        
-        vid.pause();
-
-        window.onscroll = function(){
-            vid.pause();
-        };
-
-        setInterval(function(){
-            vid.currentTime = window.pageYOffset/800;
-        }, 40);
-    </script> -->
 </body>
 </html>

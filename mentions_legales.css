@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/*----- MENTIONS LÉGALES ----*/
+
+.content{
+    margin-top: 100px;
+    padding: 20px;
+    width: calc(100% - 40px);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content h1{
+    text-align: center;
+    font-size: 3em;
+    font-weight: 600;
+    color: #233f6e;
+}
+
+.content .article{
+    margin-left: 10px;
+    margin-bottom: 20px;
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content .article h2{
+    color: rgb(59, 59, 59);
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+}
+
+.content .article p{
+    margin-left: 10px;
+    color: black;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: left;
+}
+

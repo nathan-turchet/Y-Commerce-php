@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+  
+body{
+  overflow-x: hidden;
+}
+
+/*---- TOP ----*/ 
+
+.top{
+  padding: 30px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  position: fixed;
+  top: 0px;
+  background-color: white;
+  width: calc(100% - 10%);
+  z-index: 10000;
+}
+
+.top h1{
+  font-weight: 600;
+  color: rgb(58, 58, 58);
+}
+
+.top .menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.menu .left,
+.menu .right{
+  margin: 0px 15px 0px 0px;
+  display: flex;
+  flex-direction: row;
+}
+
+.btn{
+  cursor: pointer;
+  border: none;
+  font-size: 17px;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.menu .right .pannier{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu .right .pannier .btn{
+  font-size: 20px;
+  padding: 10px ;
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+/*---- DROPDOWN PLUS ----*/ 
+
+.dropdown{
+  display: none;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 150px;
+  background-color: white;
+  right: 8%;
+}
+
+.menu .left .dropdown-plus:nth-child(6):hover .dropdown{
+  display: flex;
+}
+
+/*---- DROPDOWN LOGIN ----*/ 
+
+.menu .right .login button{
+  font-size: 17px;
+  padding: 10px 2px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  cursor: pointer;
+  border: none;
+}
+
+.menu .right .login button i:nth-child(1){
+  font-size: 21px;
+  color: #233f6e;
+}
+
+.dropdown-login-content{
+  padding: 15px;
+  display: none;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 200px;
+  background-color: white;
+  right: 8%;
+}
+
+.menu .right .dropdown-login:hover .dropdown-login-content{
+  display: flex;
+}
+
+/*---- DROPDOWN RESPONSIVE ----*/
+
+.dropdown-responsive .btn-bar{
+  cursor: pointer;
+  border: none;
+  font-size: 25px;
+  padding: 10px;
+  background-color: transparent;
+  color: black;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  right: -30px;
+  top: 0px;
+}
+
+.dropdown-responsive .btn-bar .bar{
+  margin: 2.5px 0px;
+  width: 25px;
+  height: 2px;
+  background-color: black;
+  border-radius: 10px;
+  transition-duration: 300ms;
+}
+
+.dropdown-responsive .btn-bar .bar-1{
+  position: absolute;
+  top: 1px;
+}
+
+
+.dropdown-responsive .btn-bar .bar-2{
+  top: 8px;
+  position: absolute;  
+}
+
+.dropdown-responsive .btn-bar .clicked-bar-1{
+  position: absolute;
+  background-color: white;
+  transform: rotate(45deg);
+  top: 4px;
+}
+
+.dropdown-responsive .btn-bar .clicked-bar-2{
+  position: absolute;
+  background-color: white;
+  transform: rotate(-45deg);
+  top: 4px;
+}
+
+.dropdown-responsive{
+  position: absolute;
+  width: 100%;
+  top: 39px;
+  right: 88px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.dropdown-responsive .dropdown-responsive-content{
+  z-index: 8000;
+  position: absolute;
+  top: -39px;
+  right: -445px;
+  width: 36%;
+  height: 100vh;
+  background-color: #233f6e;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  transition-duration: 400ms;
+  transition-timing-function: ease;
+}
+
+.dropdown-responsive .dropdown-responsive-content-visible{
+  z-index: 800;
+  position: absolute;
+  top: -39px;
+  right: -88px;
+  transition-duration: 400ms;
+  width: 100%;
+}
+
+.dropdown-responsive .dropdown-responsive-content .btn-dropdown-responsive{
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 80%;
+  border-bottom: 0.5px rgb(165, 165, 165) solid;
+  margin-top: 10px;
+}
+
+.dropdown-responsive .dropdown-responsive-content .btn-dropdown-responsive:nth-child(1){
+  margin-top: 70px;
+}
+
+.dropdown-responsive .dropdown-responsive-content .btn-dropdown-responsive-dropdown{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.dropdown-responsive .dropdown-responsive-content .btn-dropdown-responsive-dropdown .btn-dropdown-responsive-dropdown-plus{
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 82%;
+  margin-top: 10px;
+  padding: 10px;
+  border-bottom: 0.5px rgb(165, 165, 165) solid;
+}
+
+/*---- DROPDOWN RESPONSIVE PLUS ----*/
+
+.dropdown-responsive-plus{
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 82%;
+}
+
+.dropdown-responsive-plus .btn-dropdown-responsive-dropdown-plus{
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border-bottom: 0.5px rgb(165, 165, 165) solid;
+} 
+
+.dropdown-responsive-plus .dropdown-responsive-content-plus{
+  background-color: transparent;
+  width: calc(100% - 50px);
+  margin-left: 50px;
+  margin-top: 20px;
+  display: none;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+} 
+
+.dropdown-responsive-plus .content_plus_open{
+  display: flex;
+} 
+
+.dropdown-responsive-plus .btn-dropdown-responsive-plus{
+  color: white;
+  font-size: 18px;
+  font-weight: lighter;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+} 
+
+
+/*---- DROPDOWN RESPONSIVE LOGIN ----*/
+
+.dropdown-responsive-login{
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 82%;
+}
+
+.dropdown-responsive-login .btn-dropdown-responsive-dropdown-login{
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border-bottom: 0.5px rgb(165, 165, 165) solid;
+} 
+
+.dropdown-responsive-login .btn-dropdown-responsive-dropdown-login i:nth-child(1){
+  margin-right: 10px;
+}
+
+.dropdown-responsive-login .dropdown-login-content-responsive{
+  background-color: transparent;
+  width: calc(100% - 50px);
+  margin-left: 50px;
+  margin-top: 20px;
+  display: none;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+} 
+
+.dropdown-responsive-login .content_login_open{
+  display: flex;
+} 
+
+.dropdown-responsive-login .btn-dropdown-responsive-login{
+  color: white;
+  font-size: 18px;
+  font-weight: lighter;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+} 
+
+/* 
+.dropdown-responsive-login .btn-dropdown-responsive-login:nth-child(2){
+  margin-left: 20px;
+} 
+
+.dropdown-responsive-login .btn-dropdown-responsive-login:nth-child(3){
+  margin-left: 30px;
+} 
+
+.dropdown-responsive-login .btn-dropdown-responsive-login:nth-child(4){
+  margin-left: 40px;
+}  */
+
+/*---- MON PANIER ----*/
+
+.dropdown-responsive-content .btn-dropdown-responsive-mon-panier p{
+  margin-right: 10px;
+}
+
+/*------ DÉBUT RESPONSIVE ------*/
+
+@media screen and (max-width: 1000px){
+
+  .top .menu{
+      display: none;
+  }
+
+  .top .dropdown-responsive{
+      display: flex;
+  }
+}
+
+/*------ FIN RESPONSIVE ------*/ 

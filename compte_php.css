@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/*---- CONTACT ----*/ 
+
+.contain{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.compte{
+    width: 50%;
+    height: auto;
+    background-color: #ffffff;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.compte .content{
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.compte .content h1{
+    text-align: center;
+    font-size: 2.5em;
+    color: #233f6e;
+    font-weight: 600;
+}
+
+.compte .content .formulaire{
+    width: 100%;
+}
+
+.compte .content .formulaire .label{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 100px 10px 20px;
+}
+
+.compte .content .formulaire .label span{
+    font-size: 15px;
+    color: rgb(95, 95, 95);
+}
+
+.compte .content .formulaire .label input{
+    width: 100%;
+    height: 20px;
+    padding: 10px;
+    color: black;
+    font-size: 15px;
+    margin: 5px 0px;
+    transition-duration: 200ms;
+}
+
+.compte .content .formulaire .label input:hover{
+    border: 2px solid black;
+}
+
+.compte .content .formulaire .label input:focus{
+    border: 2px solid black;
+}
+
+.compte .content .formulaire .bouton{
+    width: 100%;
+    padding: 20px;
+}
+
+.compte .content .formulaire .bouton .btn{
+    background-color: black;
+    color: white;
+    padding: 15px 45%;
+    transition-duration: 300ms;
+}
+
+.compte .content .formulaire .bouton .btn:hover{
+    background-color: rgba(0, 0, 0, 0.808);
+}
+
+/*---- PAYEMENT ----*/
+
+.shopping{
+    width: 50%;
+    min-height: 82vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shopping .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid gray;
+    width: 75%;
+    height: 75vh;
+}
+
+.shopping .content h1{
+    width: 100%;
+    text-align: center;
+    font-size: 2.5em;
+    color: #233f6e;
+}
+
+.shopping .content .shopping-content{
+    display: flex;   
+    align-items: flex-start;
+    justify-content: start;
+    flex-direction: column;
+    min-height: 50vh;
+    width: 95%;
+    background-color: rgb(255, 255, 255);
+}
+
+.shopping .content .shopping-content .vide-shopping-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 25px 0px;
+    width: 100%;
+}
+
+.shopping .content .shopping-content .vide-shopping-content span{
+    font-size: 15px;
+    color: rgb(77, 77, 77);
+    text-align: center;
+}
+
+.shopping .content .shopping-content .vide-shopping-content a{
+    padding: 15px 25px;
+    margin: 20px 0px;
+    background-color: black;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    transition: all 300ms ;
+}
+
+.shopping .content .shopping-content .vide-shopping-content a:hover{
+    background-color: rgba(0, 0, 0, 0.781);
+}

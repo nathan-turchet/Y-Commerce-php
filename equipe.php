@@ -12,7 +12,7 @@
     crossorigin="anonymous"></script>
 </head>
 <body>
-
+<?php include("loader.php"); ?>
     <?php include('top.php'); ?>
 
     <div class="contact">
@@ -21,7 +21,7 @@
                 <div class="card">
                     <img src="images/team/nathan1.jpg">
                     <h1 class="name">N. TURCHET</h1>
-                    <h2 class="post">Développeur FrontEnd</h2>
+                    <h2 class="post">Développeur FullStack</h2>
                     <p class="description">Nous avons beaucoup de chance d'avoir un tel développeur web dans notre<br>équipe. Lorsque <strong>N. Turchet</strong> nous a rejoints, nous savions que nous avions<br>choisi le bon candidat, et nous n'avons jamais été déçus.</p>
                     <a href="">
                         Contact

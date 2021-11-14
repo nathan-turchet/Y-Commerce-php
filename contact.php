@@ -8,7 +8,7 @@
     <meta name="description" content="Page de contect">
     <title>Contact | Y-Commerce</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="contact_php.css">
     <!-- JAVASCRIPT -->
     <script src="https://kit.fontawesome.com/0c87a70838.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
@@ -16,7 +16,7 @@
     crossorigin="anonymous"></script>
 </head>
 <body>
-
+<?php include("loader.php"); ?>
     <?php include('top.php'); ?>
 
     <div class="contain">
